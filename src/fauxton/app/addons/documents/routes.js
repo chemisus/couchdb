@@ -144,7 +144,7 @@ function(app, FauxtonAPI, Documents, Databases) {
     selectedHeader: "Databases",
     routes: {
       "database/:database/_all_docs(:extra)": "allDocs", 
-      "database/:database/_design/:ddoc/_view/:view": {
+      "database/:database/_design/:ddoc/_views/:view": {
         route: "viewFn",
         roles: ['_admin']
       },
